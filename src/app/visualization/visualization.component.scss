@@ -1,0 +1,101 @@
+// *{
+//     box-sizing: border-box;
+//     }
+//  
+
+.center {
+	align-content: center;
+}
+
+.container {
+	display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: 0.25rem;
+	margin: 12px 0px;
+	justify-content: center;
+   
+}
+
+.pdd {
+    padding: 3;
+    border: 1px solid #ccc;
+	padding-left: 1rem;
+}
+
+.column {
+	min-height: 200px;
+	flex-direction: column;
+}
+
+/* Flex Item */
+.item {
+	margin: 3px;
+    padding: 3px 3px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Indica que o conteúdo deve se expandir */
+.flex {
+	flex: 1;
+}
+
+.placar-jogo {
+    font-size: larger;
+} 
+
+.placar-aposta {
+    font-size: 50%;
+    font-weight: 400;
+    font-size: small;
+    
+}
+
+.item3 {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -14px;
+    width: 104%;
+}
+
+.jogo__informacoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	color: #070707;
+    font-family: opensans;
+    font-size: 0.6875em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    margin: -10px;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+
+.x {
+	color: #0c0c0c;
+}
+
+.sigla {
+    font-family: initial;
+    margin: 3;
+    padding: 2px 14px 2px 14px;
+    font-size: 130%;
+    /* font-stretch: 100%; */
+    /* font-style: normal; */
+    /* font-weight: 500; */
+    /* line-height: 1em; */
+    /* text-align: right; */
+    /* box-sizing: inherit; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* border: 0; */
+}
