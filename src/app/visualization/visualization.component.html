@@ -10,7 +10,7 @@
         <tr class="bg-dark text-light">
             <th>Rodadas</th>
             <th>Ações</th>
-            <th>Informações</th>
+            <th>Informações</th> 
         </tr>
     </thead>
 </table>
@@ -29,19 +29,15 @@
 </div>
 
 <div class="flex">
-    <div class="">
-        Featured
-    </div>
-
     <div class="card-header  mb-1">
         <div class="">
-            <div class="jogo__informacoes" *ngIf="false">{{ '0 Pontos' }}</div>
+            <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
             <section class="container center">
                 <div class=" sigla">FLA<img src="assets/img/Flamengo.svg" width="25" height="25"></div>
                 <div>
-                    <span class="placar-jogo font-bold" *ngIf="false">{{ '1' }}</span>
-                    <span class=" placar-aposta item">( 0 <img src="assets/img/botao-x.svg" width="10" height="10"> 0 )</span>
-                    <span class="placar-jogo" *ngIf="false">{{ '1' }}</span>
+                    <span class="placar-jogo font-bold" *ngIf="true">{{ '1' }}</span>
+                    <span class=" placar-aposta item">( 1 <img src="assets/img/botao-x.svg" width="10" height="10"> 1 )</span>
+                    <span class="placar-jogo" *ngIf="true">{{ '1' }}</span>
                 </div>
                 <div class=" sigla"><img src="assets/img/sao-paulo.svg" width="25" height="25"> SPO</div>
             </section>
@@ -51,84 +47,26 @@
             <div *ngIf="false">Encerrado</div>
         </div>
     </div>
-    <!-- <div class="card-header mb-1">
-        <div>
-            <div class="jogo__informacoes">
-                <span><b>SÁB 05/08/2023</b></span>
-                <span>Maracanã</span>
-                <span><b>16:00</b></span>
-            </div>
-            <section class="container center">
-                <div class=" sigla">FLA<img src="assets/img/Flamengo.svg" width="25" height="25"></div>
-                <div class="">
-                    <span class="placar-jogo"><b>1</b></span>
-                    <span class=" placar-aposta item">( 2 <img src="assets/img/botao-x.svg" width="10" height="10"> 1
-                        )</span>
-                    <span class="placar-jogo"><b>1</b></span>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+
+    <div class="flex">
+        <div class="card-header  mb-1">
+            <div class="">
+                <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                <section class="container center">
+                    <div class=" sigla">FLA<img src="assets/img/Flamengo.svg" width="25" height="25"></div>
+                    <div>
+                        <span class="placar-jogo font-bold" *ngIf="false">{{ '1' }}</span>
+                        <span class=" placar-aposta item">( 0 <img src="assets/img/botao-x.svg" width="10" height="10"> 0 )</span>
+                        <span class="placar-jogo" *ngIf="false">{{ '1' }}</span>
+                    </div>
+                    <div class=" sigla"><img src="assets/img/sao-paulo.svg" width="25" height="25"> SPO</div>
+                </section>
+                <div class="jogo__informacoes" *ngIf="true">
+                    {{ 'SÁB 05/08/2023' }} {{ 'Maracanã' }} {{ '16:00' }}
                 </div>
-                <div class=" sigla"><img src="assets/img/sao-paulo.svg" width="25" height="25"> SPO</div>
-            </section>
-            <div><a class="item3" routerLink="">Encerrado</a></div>
-        </div>
-    </div>
-    <div class="card-header mb-1">
-        <div class="">
-            <div class="jogo__informacoes">
-                <span><b>SÁB 05/08/2023</b></span>
-                <span>Maracanã</span>
-                <span><b>16:00</b></span>
+                <div *ngIf="false">Encerrado</div>
             </div>
-            <section class="container center">
-                <div class=" sigla">FLA<img src="assets/img/Flamengo.svg" width="25" height="25"></div>
-                <div class="">
-                    <span class="placar-jogo"><b>1</b></span>
-                    <span class=" placar-aposta item">( 0 <img src="assets/img/botao-x.svg" width="10" height="10"> 1
-                        )</span>
-                    <span class="placar-jogo"><b>2</b></span>
-                </div>
-                <div class=" sigla"><img src="assets/img/sao-paulo.svg" width="25" height="25"> SPO</div>
-            </section>
-            <div><a class="item3" routerLink="">Encerrado</a></div>
         </div>
-    </div>
-    <div class="card-header mb-1">
-        <div class="">
-            <div class="jogo__informacoes">
-                <span><b>SÁB 05/08/2023</b></span>
-                <span>Maracanã</span>
-                <span><b>16:00</b></span>
-            </div>
-            <section class="container center">
-                <div class=" sigla">FLA<img src="assets/img/Flamengo.svg" width="25" height="25"></div>
-                <div class="">
-                    <span class="placar-jogo"><b>1</b></span>
-                    <span class=" placar-aposta item">( 1 <img src="assets/img/botao-x.svg" width="10" height="10"> 1
-                        )</span>
-                    <span class="placar-jogo"><b>1</b></span>
-                </div>
-                <div class=" sigla"><img src="assets/img/sao-paulo.svg" width="25" height="25"> SPO</div>
-            </section>
-            <div><a class="item3" routerLink="">Encerrado</a></div>
-        </div>
-    </div>
-    <div class="card-header mb-1">
-        <div class="">
-            <div class="jogo__informacoes">
-                <span><b>SÁB 05/08/2023</b></span>
-                <span>Maracanã</span>
-                <span><b>16:00</b></span>
-            </div>
-            <section class="container center">
-                <div class=" sigla">FLA<img src="assets/img/Flamengo.svg" width="25" height="25"></div>
-                <div class="">
-                    <span class="placar-jogo"><b>3</b></span>
-                    <span class=" placar-aposta item">( 3 <img src="assets/img/botao-x.svg" width="10" height="10"> 2
-                        )</span>
-                    <span class="placar-jogo"><b>2</b></span>
-                </div>
-                <div class=" sigla"><img src="assets/img/sao-paulo.svg" width="25" height="25"> SPO</div>
-            </section>
-            <div><a class="item3" routerLink="">Encerrado</a></div>
-        </div>
-    </div>
-</div> -->
+       
