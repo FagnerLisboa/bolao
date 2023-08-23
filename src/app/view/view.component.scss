@@ -25,10 +25,8 @@
     flex-wrap: wrap;
     padding: 0.75rem 1rem;
     margin-bottom: 1rem;
-    list-style: none;
-    border-radius: 0.25rem;
-	margin: -15px 0px;
-	justify-content: center;
+	margin: 5px 0px;
+	justify-content: space-evenly;
 }
 
 .box {
@@ -46,7 +44,6 @@
 	flex-direction: column;
 }
 
-/* Flex Item */
 .item {
 	margin: 3px;
     padding: 3px 3px;
@@ -54,25 +51,13 @@
     font-size: 1.5em;
 }
 
-/* Indica que o conteúdo deve se expandir */
-.flex {
-	flex: 1;
-}
-
-.placar-aposta {
+.score-bet {
     font-size: 50%;
     font-weight: 400;
-    font-size: small;
-    
+    font-size: small;   
 }
 
-.item3 {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.jogo__informacoes {
+.date__playing {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -91,21 +76,10 @@
     justify-content: center;
     flex-wrap: wrap;
 	color: #070707;
-    font-size: 0.6875em;
+    font-size: 0.7875em;
     font-weight: bold;
     letter-spacing: 1.7px;
-    margin: -10px;
-}
-
-.points2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-	color: #070707;
-    font-size: 0.6875em;
-    font-weight: bold;
-    letter-spacing: 1.7px;
-    margin: -5px;
+    margin: -8px;
 }
 
 body {
@@ -113,15 +87,27 @@ body {
 	color: #333;
 }
 
-.x {
-	color: #0c0c0c;
+.round-selector {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #ccc;
 }
 
-.sigla {
+.acronyms {
     font-family: initial;
-    margin: 3;
+    margin: -3px -2px 0px 0px;
     padding: 2px 14px 2px 14px;
-    font-size: 130%;
+    font-size: 100%;
+}
+
+.acronyms1 {
+    font-family: initial;
+    margin: 10px;
+    font-size: 120%;
+
 }
 
 span {

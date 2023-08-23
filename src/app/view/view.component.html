@@ -1,0 +1,263 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Pontuação Geral</li>
+    </ol>
+</nav>
+
+<table class="table table-hover">
+    <thead>
+        <tr class="bg-dark text-light">
+            <th>Rodadas</th>
+            <th>Ações</th>
+            <th>Informações</th>
+        </tr>
+    </thead>
+</table>
+
+<div class="row mb-4">
+    <div class="col-md">
+        <h2 class="h2 border-left pl-2">
+            Resultados
+        </h2>
+    </div>
+    <div class="col-md">
+        <a routerLink="new" class="btn btn-success float-right">
+            Classificação
+        </a>
+    </div>
+</div>
+
+<section class="round-selector">
+    <a href="#"><img src="assets/img/back.png" width="20" height="20"></a>1º Rodada
+    <a href="#"><img src="assets/img/advance.png" width="20" height="20"></a>
+</section>
+
+
+<div class="card-header  mb-1">
+    <div class="">
+        <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+        <section class="container center">
+            <div class="acronyms"><span class="acronyms1">AMG</span><img src="assets/img/America-MG.svg" width="19"
+                    height="19"></div>
+            <div>
+                <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                <span class=" score-bet item">( 0 <img src="assets/img/botao-x.svg" width="10" height="10"> 3 )</span>
+                <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+            </div>
+            <div class="acronyms"><img src="assets/img/fluminense.svg" width="20" height="20"><span
+                    class="acronyms1">FLU</span></div>
+        </section>
+        <div class="date__playing" *ngIf="true">
+            {{ 'SÁB 15/04/2023' }} {{ 'INDEPEDÊNCIA' }} {{ '16:00' }}
+        </div>
+        <div *ngIf="false">Encerrado</div>
+    </div>
+</div>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<div class="flex">
+    <div class="card-header  mb-1">
+        <div class="">
+            <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+            <section class="container center">
+                <div class="acronyms"><span class="acronyms1">PAL</span><img src="assets/img/Palmeiras.svg" width="20"
+                        height="20"></div>
+                <div>
+                    <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                    <span class=" score-bet item">( 2 <img src="assets/img/botao-x.svg" width="10" height="10"> 1
+                        )</span>
+                    <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                </div>
+                <div class="acronyms"><img src="assets/img/Cuiaba.svg" width="20" height="20"><span
+                        class="acronyms1">CUI</span></div>
+            </section>
+            <div class="date__playing" *ngIf="true">
+                {{ 'SÁB 15/04/2023' }} {{ 'ALIANZ PARQUE' }} {{ '16:00' }}
+            </div>
+            <div *ngIf="false">Encerrado</div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="card-header  mb-1">
+            <div class="">
+                <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                <section class="container center">
+                    <div class="acronyms"><span class="acronyms1">FOR</span><img src="assets/img/Fortaleza.svg"
+                            width="20" height="20"></div>
+                    <div>
+                        <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                        <span class=" score-bet item">( 1 <img src="assets/img/botao-x.svg" width="10" height="10"> 1
+                            )</span>
+                        <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                    </div>
+                    <div class="acronyms"><img src="assets/img/internacional.svg" width="20" height="21"><span
+                            class="acronyms1">INT</span></div>
+                </section>
+                <div class="date__playing" *ngIf="true">
+                    {{ 'SÁB 15/04/2023' }} {{ 'CASTELÃO' }} {{ '16:00' }}
+                </div>
+                <div *ngIf="false">Encerrado</div>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="card-header  mb-1">
+                <div class="">
+                    <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                    <section class="container center">
+                        <div class="acronyms"><span class="acronyms1">CAP</span><img src="assets/img/Athletico-PR.svg"
+                                width="20" height="20"></div>
+                        <div>
+                            <span class="scoreboard" *ngIf="true">{{ '2' }}</span>
+                            <span class=" score-bet item">( 2 <img src="assets/img/botao-x.svg" width="10" height="10">
+                                0 )</span>
+                            <span class="scoreboard" *ngIf="true">{{ '0' }}</span>
+                        </div>
+                        <div class="acronyms"><img src="assets/img/GOIAS.svg" width="20" height="20"><span
+                                class="acronyms1">GOI</span></div>
+                    </section>
+                    <div class="date__playing" *ngIf="true">
+                        {{ 'SÁB 15/04/2023' }} {{ 'LIGGA ARENA' }} {{ '18:30' }}
+                    </div>
+                    <div *ngIf="false">Encerrado</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="card-header  mb-1">
+                    <div class="">
+                        <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                        <section class="container center">
+                            <div class="acronyms"><span class="acronyms1">BOT</span><img src="assets/img/botafogo.svg"
+                                    width="20" height="20"></div>
+                            <div>
+                                <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                                <span class=" score-bet item">( 2 <img src="assets/img/botao-x.svg" width="10"
+                                        height="10"> 0 )</span>
+                                <span class="scoreboard" *ngIf="true">{{ '0' }}</span>
+                            </div>
+                            <div class="acronyms"><img src="assets/img/sao-paulo.svg" width="20" height="20"><span
+                                    class="acronyms1">SPO</span></div>
+                        </section>
+                        <div class="date__playing" *ngIf="true">
+                            {{ 'SÁB 15/04/2023' }} {{ 'NILTON SANTOS' }} {{ '18:30' }}
+                        </div>
+                        <div *ngIf="false">Encerrado</div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="card-header  mb-1">
+                        <div class="">
+                            <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                            <section class="container center">
+                                <div class="acronyms"><span class="acronyms1">RBB</span><img
+                                        src="assets/img/bragantino.svg" width="20" height="20"></div>
+                                <div>
+                                    <span class="scoreboard" *ngIf="true">{{ '2' }}</span>
+                                    <span class=" score-bet item">( 2 <img src="assets/img/botao-x.svg" width="10"
+                                            height="10"> 0 )</span>
+                                    <span class="scoreboard" *ngIf="true">{{ '0' }}</span>
+                                </div>
+                                <div class="acronyms"><img src="assets/img/bahia.svg" width="20" height="20"><span
+                                        class="acronyms1">BAH</span></div>
+                            </section>
+                            <div class="date__playing" *ngIf="true">
+                                {{ 'SÁB 15/04/2023' }} {{ 'NABI ABI CHEDID' }} {{ '18:30' }}
+                            </div>
+                            <div *ngIf="false">Encerrado</div>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="card-header  mb-1">
+                            <div class="">
+                                <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                                <section class="container center">
+                                    <div class="acronyms"><span class="acronyms1">CAM</span><img
+                                            src="assets/img/atletico-mg.svg" width="20" height="20"></div>
+                                    <div>
+                                        <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                                        <span class=" score-bet item">( 0 <img src="assets/img/botao-x.svg" width="10"
+                                                height="10"> 0 )</span>
+                                        <span class="scoreboard" *ngIf="true">{{ '2' }}</span>
+                                    </div>
+                                    <div class="acronyms"><img src="assets/img/vasco.svg" width="20" height="20"><span
+                                            class="acronyms1">VAS</span></div>
+                                </section>
+                                <div class="date__playing" *ngIf="true">
+                                    {{ 'SÁB 15/04/2023' }} {{ 'MINEIRÃO' }} {{ '21:00' }}
+                                </div>
+                                <div *ngIf="false">Encerrado</div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="card-header  mb-1">
+                                <div class="">
+                                    <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                                    <section class="container center">
+                                        <div class="acronyms"><span class="acronyms1">COR</span><img
+                                                src="assets/img/Athletico-PR.svg" width="20" height="20"></div>
+                                        <div>
+                                            <span class="scoreboard" *ngIf="true">{{ '2' }}</span>
+                                            <span class=" score-bet item">( 2 <img src="assets/img/botao-x.svg"
+                                                    width="10" height="10"> 0 )</span>
+                                            <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                                        </div>
+                                        <div class="acronyms"><img src="assets/img/GOIAS.svg" width="20"
+                                                height="20"><span class="acronyms1">CRU</span></div>
+                                    </section>
+                                    <div class="date__playing" *ngIf="true">
+                                        {{ 'DOM 16/04/2023' }} {{ 'NEO QUÍMICA ARENA' }} {{ '16:00' }}
+                                    </div>
+                                    <div *ngIf="false">Encerrado</div>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="card-header  mb-1">
+                                    <div class="">
+                                        <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                                        <section class="container center">
+                                            <div class="acronyms"><span class="acronyms1">FLA</span><img
+                                                    src="assets/img/Flamengo.svg" width="20" height="20"></div>
+                                            <div>
+                                                <span class="scoreboard" *ngIf="true">{{ '3' }}</span>
+                                                <span class=" score-bet item">( 2 <img src="assets/img/botao-x.svg"
+                                                        width="10" height="10"> 0 )</span>
+                                                <span class="scoreboard" *ngIf="true">{{ '0' }}</span>
+                                            </div>
+                                            <div class="acronyms"><img src="assets/img/coritiba.svg" width="20"
+                                                    height="20"><span class="acronyms1">CFC</span></div>
+                                        </section>
+                                        <div class="date__playing" *ngIf="true">
+                                            {{ 'DOM 16/04/2023' }} {{ 'MARACANÃ' }} {{ '16:00' }}
+                                        </div>
+                                        <div *ngIf="false">Encerrado</div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="card-header  mb-1">
+                                        <div class="">
+                                            <div class="points" *ngIf="true">{{ '0 Pontos' }}</div>
+                                            <section class="container center">
+                                                <div class="acronyms"><span class="acronyms1">GRE</span><img
+                                                        src="assets/img/gremio.svg" width="20" height="20"></div>
+                                                <div>
+                                                    <span class="scoreboard" *ngIf="true">{{ '1' }}</span>
+                                                    <span class=" score-bet item">( 2 <img src="assets/img/botao-x.svg"
+                                                            width="10" height="10"> 0 )</span>
+                                                    <span class="scoreboard" *ngIf="true">{{ '0' }}</span>
+                                                </div>
+                                                <div class="acronyms"><img src="assets/img/santos.svg" width="20"
+                                                        height="20"><span class="acronyms1">SAN</span></div>
+                                            </section>
+                                            <div class="date__playing" *ngIf="true">
+                                                {{ 'DOM 16/04/2023' }} {{ 'ALFREDO JACONI' }} {{ '18:30' }}
+                                            </div>
+                                            <div *ngIf="false">Encerrado</div>
+                                        </div>
+                                    </div>
