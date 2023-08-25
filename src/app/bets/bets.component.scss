@@ -1,5 +1,5 @@
-*{
-    box-sizing: border-box;
+* {
+   box-sizing: border-box;
 }
 
 .round-selector {
@@ -17,8 +17,8 @@
    flex-direction: column;
 }
 
-.card-header:hover{
-   background-color:  rgba(0, 0, 0, 0.125);
+.card-header:hover {
+   background-color: rgba(0, 0, 0, 0.125);
 }
 
 .container {
@@ -65,12 +65,11 @@
    text-align: center;
 }
 
-.date__playing{
+.date__playing {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
    color: #070707;
-   font-family: opensans;
    font-size: 0.6875em;
    font-style: normal;
    font-weight: 700;
@@ -81,5 +80,24 @@
 
 span {
    font-weight: bold;
-   
+
+}
+
+@media (max-width: 355px) {
+   .acronyms {
+      margin: 5px;
+      font-size: 60%;
+   }
+}
+
+@media (max-width: 355px) {
+   .date__playing {
+      font-size: 0.5145em;
+   } 
+}
+
+@media (max-width: 169px) {
+   .item {
+      margin: 20px;
+   } 
 }
