@@ -4,8 +4,8 @@ import { viewComponent } from './view/view.component';
 import { BetsComponent } from './bets/bets.component';
 
 const routes: Routes = [
-  { path: 'wiew', component: viewComponent },
-  { path: '', component: BetsComponent}
+  { path: '', component: viewComponent },
+  { path: 'bets', component: BetsComponent}
 ];
 
 @NgModule({

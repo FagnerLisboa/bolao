@@ -29,23 +29,11 @@
 	justify-content: space-evenly;
 }
 
-.box {
-    padding: 3px;
-    border: 3px solid #ccc;
-    padding-left: 1rem;
-}
-
 .card-header:hover{
     background-color:  rgba(0, 0, 0, 0.125);
 }
 
-.column {
-	min-height: 200px;
-	flex-direction: column;
-}
-
 .item {
-	margin: 3px;
     padding: 3px 3px;
     text-align: center;
     font-size: 1.5em;
@@ -82,11 +70,6 @@
     margin: -8px;
 }
 
-body {
-	font-family: monospace;
-	color: #333;
-}
-
 .round-selector {
     display: flex;
     justify-content: space-evenly;
@@ -96,14 +79,14 @@ body {
     background-color: #ccc;
 }
 
-.acronyms {
+.acronyms-icon {
     font-family: initial;
     margin: -3px -2px 0px 0px;
     padding: 2px 14px 2px 14px;
     font-size: 100%;
 }
 
-.acronyms1 {
+.acronyms {
     font-family: initial;
     margin: 10px;
     font-size: 120%;
@@ -114,11 +97,5 @@ span {
     font-weight: bold;
     
 }
-
-// @media (max-width: 367px) {
-//     .container {
-//       background-color: red;
-//     }
-//   }
 
  

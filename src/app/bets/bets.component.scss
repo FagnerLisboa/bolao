@@ -1,14 +1,15 @@
 *{
     box-sizing: border-box;
-} 
-
-.bord-box {  
-   padding: 0.75rem 1.25rem;
-   margin-bottom: 3px;
-   background-color: rgba(0, 0, 0, 0.03);
-   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
+.round-selector {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 4px;
+   border: 1px solid #ccc;
+   text-align: center;
+   background-color: #ccc;
+}
 
 .flex {
    display: flex;
@@ -16,8 +17,8 @@
    flex-direction: column;
 }
 
-.center {
-   align-content: center;
+.card-header:hover{
+   background-color:  rgba(0, 0, 0, 0.125);
 }
 
 .container {
@@ -29,14 +30,22 @@
    justify-content: space-evenly;
 }
 
-.box {
-   padding: 3px;
-   border: 3px solid #ccc;
-   padding-left: 1rem;
+.center {
+   align-content: center;
 }
 
-.card-header:hover{
-   background-color:  rgba(0, 0, 0, 0.125);
+.acronyms-icon {
+   font-family: initial;
+   margin: -6px -17px 0px -19px;
+   padding: 2px 14px 2px 14px;
+   font-size: 100%;
+}
+
+.acronyms {
+   font-family: initial;
+   margin: 10px;
+   font-size: 120%;
+
 }
 
 .column {
@@ -50,10 +59,10 @@
    text-align: center;
 }
 
-.score-bet {
-   font-size: 50%;
-   font-weight: 400;
-   font-size: small;   
+.scoreboard {
+   width: 25px;
+   height: 25px;
+   text-align: center;
 }
 
 .date__playing{
@@ -70,40 +79,7 @@
    margin: -10px;
 }
 
-body {
-   font-family: monospace;
-   color: #333;
-}
-
-.round-selector {
-   display: flex;
-   justify-content: space-evenly;
-   padding: 4px;
-   border: 1px solid #ccc;
-   text-align: center;
-   background-color: #ccc;
-}
-
-.acronyms {
-   font-family: initial;
-   margin: -6px -17px 0px -19px;
-   padding: 2px 14px 2px 14px;
-   font-size: 100%;
-}
-
-.acronyms1 {
-   font-family: initial;
-   margin: 10px;
-   font-size: 120%;
-
-}
-
 span {
    font-weight: bold;
    
-}
-.scoreboard {
-    width: 25px;
-    height: 25px;
-    text-align: center;
 }
