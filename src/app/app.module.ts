@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +11,9 @@ import { viewComponent } from './view/view.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BetsComponent } from './bets/bets.component';
 import { FooterComponent } from './footer/footer.component';
+import { viewService } from './shared/view.service';
+import { WidgetComponent } from './widget/widget.component';
+
 
 @NgModule({
   declarations: [
@@ -15,14 +21,18 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     viewComponent,
     BetsComponent,
-    FooterComponent
+    FooterComponent,
+    WidgetComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastModule,
+    ButtonModule
   ],
-  providers: [],
+  providers: [viewService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

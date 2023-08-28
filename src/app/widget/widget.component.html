@@ -1,0 +1,23 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Pontuação Geral</li>
+    </ol>
+</nav>
+
+<div class="row mb-4">
+    <div class="col-md">
+        <h2 class="h2 border-left pl-2">
+            Tabela 
+        </h2>
+    </div>
+</div>
+
+<div class="apifutebol-tabela" data-client-id="LKHZCN3DM7D2"></div>
+
+<h2>Tabela</h2>
+
+<ul>
+    <li *ngFor="let c of apiFutebol"></li>
+    
+</ul>

@@ -6,12 +6,12 @@
 </nav>
 
 <div class="row mb-4">
-    <div class="col-md">
-        <a routerLink="new" class="btn btn-success float-right">
-            Salvar
-        </a>
+    <div class="col-md button ">
+        <p-toast position="top-center" key="tc"></p-toast>
+        <button type="button" pButton pRipple (click)="showTopCenter()" label="Salvar" class="p-button-success"></button>
     </div>
 </div>
+
 
 <section class="round-selector">
     <a href="#"><img src="assets/img/back.png" width="20" height="20"></a>1º Rodada

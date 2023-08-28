@@ -10,5 +10,16 @@ import { CommonModule } from '@angular/common';
   ]
 })
 export class ViewModule { 
-    
+
+  name: string ="";
+  rodada: string ="";
+  status: string ="";
+  slug: string ="";
+
 }
+
+export class token{
+  valor: String = "";
+}
+    
+

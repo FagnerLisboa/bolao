@@ -2,6 +2,11 @@
    box-sizing: border-box;
 }
 
+.button {
+   display: flex;
+    justify-content: space-between;
+}
+
 .round-selector {
    display: flex;
    justify-content: space-evenly;

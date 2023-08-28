@@ -1,12 +1,8 @@
-export interface IView{
-    id: number;
-    name: string;
-    description: string;
-    team: string;
-    date: number;
-    hora: number;
-    scoreboard: number;
-    round: number;    
-}
+export class Iview{
+    id: number = 0;
+    name: string = "";
+    rodada: string = "";
+    status: string = "";
+    slug: string = "" ;
 
-export const view: IView[] = []
+}
