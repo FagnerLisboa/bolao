@@ -1,7 +1,4 @@
 export const environment = {
     production: false,
-    apiFutebol:'https://api.api-futebol.com.br/v1/campeonatos/10/rodadas',
-    apiToken: ''
-
- 
+    urlApiFutebol:'http://jsuol.com.br/c/monaco/utils/gestor/commons.js?callback=simulador_dados_jsonp&file=commons.uol.com.br/sistemas/esporte/modalidades/futebol/campeonatos/dados/2023/30/dados.json',
 };

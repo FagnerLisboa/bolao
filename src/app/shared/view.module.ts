@@ -15,7 +15,10 @@ export class ViewModule {
   rodada: string ="";
   status: string ="";
   slug: string ="";
-
+  placar1: string = "";
+  placar2: string = "";
+  estadio: string = "";
+  local: string = "";
 }
 
 export class token{

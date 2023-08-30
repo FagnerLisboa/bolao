@@ -1,4 +1,4 @@
-<nav aria-label="breadcrumb">
+<!-- <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Pontuação Geral</li>
@@ -13,11 +13,47 @@
     </div>
 </div>
 
-<div class="apifutebol-tabela" data-client-id="LKHZCN3DM7D2"></div>
+<div class="apifutebol-tabela" data-client-id="LKHZCN3DM7D2"></div> -->
 
-<h2>Tabela</h2>
+<section class="round-selector">
+    <a href="#"><img src="assets/img/back.png" width="20" height="20"></a>
+        <i *ngIf="true">{{'1º Rodada'}}</i>
+    <a href="#"><img src="assets/img/advance.png" width="20" height="20"></a>
+</section>
 
-<ul>
-    <li *ngFor="let c of apiFutebol"></li>
+<div  *ngFor="let i of rounds" class="flex" >
+    <div class="card-header  mb-1">
+        <div class="points" *ngIf="false">{{ ' Pontos' }}</div>
+        <section class="container center">
+            <div class="acronyms-icon"><span class="acronyms">AMG</span><img src="assets/img/America-MG.svg" width="19"
+                    height="19"></div>
+            <div>
+                <span class="scoreboard" *ngIf="false">{{ i.placar_mantante }}</span>
+
+                <span class="score-bet item" *ngIf="true">( {{ '' }}</span>
+                <img src="assets/img/botao-x.svg" width="10" height="10">
+                <span class=" score-bet item" *ngIf="true">{{ '' }} )</span>
+
+                <span class="scoreboard" *ngIf="true">{{ i.placar_visitante }}</span>
+            </div>
+            <div class="acronyms-icon"><img src="assets/img/fluminense.svg" width="20" height="20"><span
+                    class="acronyms">FLU</span></div>
+        </section>
+        <div class="date__playing" *ngIf="true">
+            {{ '' }} {{ '' }} {{ '' }}
+        </div>
+        <div *ngIf="false">Encerrado</div>
+    </div>
+
+
+    <div *ngFor="let i of rounds">
+        
+
+        {{ i.placar }}
+
+        {{ i.id }}
     
-</ul>
+    </div>
+
+
+

@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { viewComponent } from './view/view.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BetsComponent } from './bets/bets.component';
 import { FooterComponent } from './footer/footer.component';
 import { viewService } from './shared/view.service';
@@ -32,7 +32,7 @@ import { WidgetComponent } from './widget/widget.component';
     ToastModule,
     ButtonModule
   ],
-  providers: [viewService],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

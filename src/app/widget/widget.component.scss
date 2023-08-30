@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ .round-selector {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #ccc;
+ }
+ 
+ .flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+ }
+ 
+ .card-header:hover {
+    background-color: rgba(0, 0, 0, 0.125);
+ }
+ 
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    margin: 5px 0px;
+    justify-content: space-evenly;
+ }
+ 
+ .center {
+    align-content: center;
+ }
+ 
+ .acronyms-icon {
+    font-family: initial;
+    margin: -6px -17px 0px -19px;
+    padding: 2px 14px 2px 14px;
+    font-size: 100%;
+ }
+ 
+ .acronyms {
+    font-family: initial;
+    margin: 10px;
+    font-size: 120%;
+ 
+ }
+ 
+ .column {
+    min-height: 200px;
+    flex-direction: column;
+ }
+ 
+ .score-bet {
+    font-size: 50%;
+    font-weight: 400;
+    font-size: small;
+ }
+ 
+ .item {
+    margin: 3px;
+    padding: 3px 3px;
+    text-align: center;
+ }
+ 
+ .scoreboard {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+ }
+ 
+ .date__playing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #070707;
+    font-family: opensans;
+    font-size: 0.6875em;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    margin: -10px;
+ }
+ 
+ span {
+    font-weight: bold;
+ 
+ }
+ 
+ .points {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #070707;
+    font-size: 0.7875em;
+    font-weight: bold;
+    letter-spacing: 1.7px;
+    margin: -8px;
+ }
+ 
+ @media (max-width: 355px) {
+    .acronyms {
+       margin: 5px;
+       font-size: 60%;
+    }
+ }
