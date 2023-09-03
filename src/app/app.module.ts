@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastModule } from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
 
+import { CommonModule } from '@angular/common';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { viewComponent } from './view/view.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BetsComponent } from './bets/bets.component';
 import { FooterComponent } from './footer/footer.component';
-import { viewService } from './shared/view.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SharedService } from './shared/Shared.service';
+import { viewComponent } from './view/view.component';
 import { WidgetComponent } from './widget/widget.component';
-
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { WidgetComponent } from './widget/widget.component';
     viewComponent,
     BetsComponent,
     FooterComponent,
-    WidgetComponent
+    WidgetComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,9 +30,11 @@ import { WidgetComponent } from './widget/widget.component';
     AppRoutingModule,
     HttpClientModule,
     ToastModule,
-    ButtonModule
+    ButtonModule,
+    CommonModule,
   ],
-  providers: [HttpClient],
+  providers: [HttpClient,
+              SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

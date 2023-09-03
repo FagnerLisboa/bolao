@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { viewService } from '../shared/view.service';
-import { Rounds } from '../models/round.model';
-import { Observable, Subscriber } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { iRound } from '../shared/Shared';
+import { SharedService } from '../shared/Shared.service';
 
 @Component({
   selector: 'app-widget',
@@ -10,29 +8,23 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrls: ['./widget.component.scss']
 })
 export class WidgetComponent implements OnInit {
-  rounds: Rounds[] = [];
-
-  constructor(private http: HttpClient) {
+  
+  iRound: iRound[] = [];
+  constructor(private sharedService: SharedService) {
   }
-
+  
   ngOnInit() {
-    let api_key = "live_0bd288f2327608058ac03f20325ad5";
-    const headers = new HttpHeaders({
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${api_key}`
-      });
-
-    const requestOptions = { headers: headers };
-
-    this.http.get('https://api.api-futebol.com.br/v1/campeonatos/10', requestOptions)
-        .subscribe((res: any) => {
-            console.log(res);
-        });
+    this.getRounds();
   }
 
-  getAll() { 
+  getRounds() {
+    return this.sharedService.getAll().subscribe((data: any) => {
+     this.iRound = data['iRound'];
+     console.log(data);     
+    })
+  }
+  getId() {
+    this.sharedService.getById(0)
     
   }
 }
-
-
